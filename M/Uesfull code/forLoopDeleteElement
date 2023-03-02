@@ -1,0 +1,14 @@
+const eg = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610];
+
+for (let i = 0; i < eg.length; i++) {
+  console.log(i, eg[i], eg.length);
+  if (eg[i] > 99) {
+    // Remove element
+    eg.splice(i, 1);
+    console.log(`Element at ${i} removed. Length is  ${eg.length}`);
+    // Important
+    i--;
+  }
+}
+
+console.log(eg);
